@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Personal Website</title>
+  </head>
+  <body>
+    <div class="main-body">
+      <div class="menu-sec hidden" id="menuToggle" onclick="toggleMenu()">
+        <img
+          src="images/icon.webp"
+          width="60px"
+          height="45px"
+          onclick="toggleMenu()"
+        />
+      </div>
+      <div class="section-layout active" id="menuSection">
+        <h1>CypherDev</h1>
+        <div class="section-top">
+          <div class="profile-img">
+            <img
+              data-testid="slackProfilePicture"
+              src="images/pic.webp"
+              width="100px"
+              height="90px"
+            />
+          </div>
+          <p data-testid="currentTimeUTC" id="utc-time">Current Time(UTC)</p>
+          <p data-testid="currentDay" id="utc-day">Current Day</p>
+          <p data-testid="slackEmail">abdurraheempelumi@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="goal-text">
+        <p>Personal Goals to smash in two (2) years!</p>
+      </div>
+      <div class="goals">
+        <div class="goal1">
+          <ul>
+            <li>Master and Learn more programming skills</li>
+            <li>
+              Build personal projects for every new programming skill I learn
+              and share on GitHUb
+            </li>
+            <li>
+              I have to make sure i attend meetups and conferences to connect
+              with professionals in the field
+            </li>
+            <li>Master JavaScript (Let it be my strongest)</li>
+            <li>Work Hard so I can afford a new space and a car</li>
+          </ul>
+        </div>
+
+        <div class="goal2">
+          <ul>
+            <li>Complete and master my backend course</li>
+            <li>Learn React</li>
+            <li>Build 2 Full stack projects at least</li>
+            <li>Learn software development frameworks and tools</li>
+            <li>Rebuild my personal Portfolio</li>
+            <li>Job Hunt</li>
+            <li>Learn more and up my skills</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

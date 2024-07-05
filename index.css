@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+
+:root {
+  background-color: rgb(29, 26, 26);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px 15px;
+  font-family: "Nova Square", cursive;
+}
+
+body {
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.main-body {
+  margin: auto;
+  padding: 20px;
+}
+
+.section-layout {
+  margin: auto;
+  text-align: center;
+}
+
+.section-top {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img img {
+  margin-top: -35px;
+  border-radius: 50%;
+}
+
+.goal-text {
+  margin-bottom: 20px;
+  margin-top: -20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.goals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.goal1,
+.goal2 {
+  background-color: #ffb522;
+  border: none;
+  border-radius: 5px;
+  color: rgb(29, 26, 26);
+  font-size: 17px;
+  font-weight: bold;
+  height: auto;
+  margin: 10px;
+  padding: 13px;
+  width: 500px;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.goals p {
+  text-align: center;
+}
+
+/* For Mobile */
+@media (max-width: 600px) {
+  .section-layout {
+    position: static;
+    margin: auto;
+    text-align: left;
+    background-color: rgb(29, 26, 26);
+    color: #fff;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+
+  .active {
+    display: none;
+  }
+
+  .section-top {
+    flex-direction: column;
+  }
+
+  .section-top p {
+    font-size: 19px;
+    font-weight: bold;
+  }
+
+  .profile-img img {
+    margin-top: -20px;
+  }
+
+  .goals {
+    flex-direction: column;
+  }
+
+  .goal1,
+  .goal2 {
+    width: calc(100% - 5px);
+    max-width: 330px;
+    margin: 10px auto;
+  }
+
+  .hidden {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-sec {
+    margin: auto;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -60px;
+  }
+
+  .goal-text {
+    margin-bottom: 10px;
+    margin-top: -5px;
+    font-size: 20px;
+  }
+}
+
+/* For Tablet Portrait */
+@media (min-width: 600px) and (max-width: 900px) {
+  .section-layout {
+    width: 80%;
+  }
+
+  .goal1,
+  .goal2 {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+  }
+}
+
+/* For Tablet Landscape */
+@media (min-width: 900px) and (max-width: 1200px) and (orientation: landscape) {
+  .section-layout {
+    width: 70%;
+  }
+
+  .goal1,
+  .goal2 {
+    width: calc(50% - 5px);
+    margin: 10px;
+  }
+
+  .goals {
+    flex-direction: row;
+  }
+}
+
+/* For Large Screens */
+@media (min-width: 1200px) {
+  .section-layout {
+    width: 60%;
+  }
+
+  .goal1,
+  .goal2 {
+    width: calc(45% - 5px);
+    margin: 10px;
+  }
+
+  .goals {
+    flex-direction: row;
+  }
+}
