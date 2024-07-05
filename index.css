@@ -74,6 +74,14 @@ ul li {
   margin-left: 10px;
 }
 
+a.links {
+  margin: auto;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
 .goals p {
   text-align: center;
 }
@@ -184,5 +192,8 @@ ul li {
 
   .goals {
     flex-direction: row;
+  }
+  a.links {
+    margin: auto;
   }
 }
